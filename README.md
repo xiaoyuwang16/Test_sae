@@ -19,7 +19,7 @@ To run the training script, you need to set up your WandB API key first.
 
 #### Training Logs
 Check out the training progress and metrics on Weights & Biases:
-👉 **[Click here to view WandB Dashboard]((https://wandb.ai/xiaoyuwang-bnu-university-of-danmark/protein-training-test?nw=nwuserxiaoyuwangbnu))** 
+👉 **[Click here to view WandB Dashboard](https://wandb.ai/xiaoyuwang-bnu-university-of-danmark/protein-training-test?nw=nwuserxiaoyuwangbnu)** 
 
 
 ```python
