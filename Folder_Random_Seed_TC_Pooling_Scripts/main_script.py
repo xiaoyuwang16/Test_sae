@@ -94,7 +94,7 @@ def main():
     # Initialize wandb logger with a custom run name
     random_number = random.randint(1000, 9999)  # Generate a 4-digit random number
     run_name = f"TC_layer{args.esm_layer}_rd{args.return_difference}_rand{random_number}"
-    wandb_logger = WandbLogger(project="ESM-sparse-autoencoder", entity="onkarproject", name=run_name)
+    wandb_logger = WandbLogger(project="protein-training-test", name=run_name)
 
     
     

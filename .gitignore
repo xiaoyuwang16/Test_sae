@@ -1,0 +1,8 @@
+*.tsv
+*.fasta.gz
+*.ckpt
+*.pt
+__pycache__/
+.ipynb_checkpoints/
+wandb/
+*.gaf

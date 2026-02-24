@@ -92,7 +92,7 @@ def main():
     # Initialize wandb logger with a custom run name
     random_number = random.randint(1000, 9999)  # Generate a 4-digit random number
     run_name = f"AA_Flattened{args.esm_layer}_rand{random_number}"
-    wandb_logger = WandbLogger(project="ESM-sparse-autoencoder", entity="onkarproject", name=run_name)
+    wandb_logger = WandbLogger(project="protein-training-test", entity="xiaoyuwang-bnu-university-of-danmark", name=run_name)
     
     model_dict = {
         "esm2_t33_650M_UR50D": esm.pretrained.esm2_t33_650M_UR50D,
