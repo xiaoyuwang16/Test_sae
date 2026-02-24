@@ -7,13 +7,13 @@
 The primary goal of this project is to disentangle and isolate features specific to protein-protein binding sites and interfaces using Sparse Autoencoders (SAEs) trained on Protein Language Model (ESM) embeddings.
 
 
-### Modifications from Original Repo 
+## Modifications from Original Repo 
 
 1.  **WandB Configuration:** 
     - The `wandb` entity and project settings have been updated to log experiments to my personal workspace for independent tracking.
     - Added support for custom API keys via command line arguments.
 
-### Usage
+## Usage
 
 To run the training script, you need to set up your WandB API key first.
 
