@@ -17,10 +17,20 @@ The primary goal of this project is to disentangle and isolate features specific
 
 To run the training script, you need to set up your WandB API key first.
 
+The following is necessary for all the SAEs and transcoders:
+
+1. swissprot.tsv needs to be present in your current working directory, or the path to it must be provided in the swissprot_filtered_uniref_dataset.py script. This is simply the Swissprot dataset downloadable as a TSV file (https://www.uniprot.org/uniprotkb?query=*&facets=reviewed%3Atrue) in order to exclude its entries from SAE training. This is because the TSV later gets used for analysis. Remenber to include "Sequence" column. 
+
+2. Topk_weights folder must exist in your current working directory. This folder is where the trained model weights will get saved.
+
+3. The path to the uniref_file (uniref50.fasta.gz) needs to be provided as an argument. It can be downloaded from: https://www.uniprot.org/help/downloads as a .fasta.gz file.
+
+
 #### Training Logs
 Check out the training progress and metrics on Weights & Biases:
 👉 **[Click here to view WandB Dashboard](https://wandb.ai/xiaoyuwang-bnu-university-of-danmark/protein-training-test?nw=nwuserxiaoyuwangbnu)** 
 
+According to our needs, we'll only train SAE on AA level with this usage:
 
 ```python
 import os
